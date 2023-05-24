@@ -4,8 +4,7 @@ public class week13_1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        // 필요한 자료형을 넣어주세요
-        ArrayList< __________ > list = new ArrayList< __________ >();
+        ArrayList<Number> list = new ArrayList<Number>();
         System.out.print("Enter five integers and five doubles: ");
 
         for (int i = 0; i < 10; i++) {
@@ -20,7 +19,11 @@ public class week13_1 {
 
         sort(list);
 
-        System.out.println(list);
+        System.out.print(list.get(0));
+        for (int i = 1; i < list.size(); i++) {
+            System.out.print(", " + list.get(i));
+        }
+        System.out.println();
     }
 
     public static void sort(ArrayList<Number> list) {
