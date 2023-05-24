@@ -8,22 +8,27 @@ public class week13_1 {
         ArrayList< __________ > list = new ArrayList< __________ >();
         System.out.print("Enter five integers and five doubles: ");
 
-        /*
-            list 입력 코드
-         */
+        for (int i = 0; i < 10; i++) {
+            if (i < 5) {
+                int num = input.nextInt();
+                list.add(num);
+            } else {
+                double num = input.nextDouble();
+                list.add(num);
+            }
+        }
 
         sort(list);
 
-        /*
-            list 출력 코드
-         */
+        System.out.println(list);
     }
 
-    public static void sort( __________ ) {
-
-         /*
-            list 정렬 코드
-         */
-
+    public static void sort(ArrayList<Number> list) {
+         list.sort(new Comparator<Number>() {
+            @Override
+            public int compare(Number num1, Number num2) {
+                return Double.compare(num1.doubleValue(), num2.doubleValue());
+            }
+        });
     }
 }
