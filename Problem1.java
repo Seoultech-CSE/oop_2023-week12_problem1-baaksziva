@@ -21,7 +21,7 @@ public class week13_1 {
 
         System.out.print(list.get(0));
         for (int i = 1; i < list.size(); i++) {
-            System.out.print(", " + list.get(i));
+            System.out.print(" " + list.get(i));
         }
         System.out.println();
     }
