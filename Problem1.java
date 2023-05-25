@@ -23,7 +23,6 @@ public class week13_1 {
         for (int i = 1; i < list.size(); i++) {
             System.out.print(" " + list.get(i));
         }
-        System.out.println();
     }
 
     public static void sort(ArrayList<Number> list) {
